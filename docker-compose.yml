@@ -1,0 +1,9 @@
+version: '2'
+services:
+  tor:
+    build: .
+    command: "-f /etc/tor/torrc.exit"
+    volumes:
+      - "/etc/localtime:/etc/localtime"
+    ports:
+      - "9001:9001"
