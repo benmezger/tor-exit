@@ -5,7 +5,7 @@ FROM alpine:latest
 MAINTAINER Ben Mezger
 
 RUN apk update && apk add tor --update-cache \
-    --repository http://dl-3.alpinelinux.org/alpine/edge/testing/
+    --repository http://dl-3.alpinelinux.org/alpine/edge/community/
 
 RUN rm -rf /var/cache/apk/*
 RUN systemctl stop tor # stop tor in case it starts to run
