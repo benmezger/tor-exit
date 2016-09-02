@@ -7,3 +7,4 @@ services:
       - "/etc/localtime:/etc/localtime"
     ports:
       - "9001:9001"
+    restart: always
