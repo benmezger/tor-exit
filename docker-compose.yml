@@ -2,9 +2,11 @@ version: '2'
 services:
   tor:
     build: .
+    image: torexit
     command: "-f /etc/tor/torrc.exit"
     volumes:
       - "/etc/localtime:/etc/localtime"
     ports:
       - "9001:9001"
     restart: always
+    container_name: torexit
