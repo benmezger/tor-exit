@@ -10,6 +10,7 @@ RUN apk update && apk add tor --update-cache \
 RUN rm -rf /var/cache/apk/*
 
 COPY torrc.exit /etc/tor/torrc.exit
+COPY tor-exit-notice.html /etc/tor/tor-exit-notice.html
 
 # make sure files are owned by tor
 RUN chown -R tor /etc/tor
