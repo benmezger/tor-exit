@@ -8,6 +8,7 @@ services:
       - "/etc/localtime:/etc/localtime"
       - "/root/tor-exit/torrc.exit:/etc/tor/torrc.exit"
       - "/root/tor-exit/tor-exit-notice.html:/etc/tor/tor-exit-notice.html"
+      - "/var/lib/tor:/var/lib/tor"
     ports:
       - "9001:9001"
       - "80:80"
