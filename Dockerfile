@@ -13,7 +13,7 @@ RUN rm -rf /var/cache/apk/*
 # COPY tor-exit-notice.html /etc/tor/tor-exit-notice.html
 
 # make sure files are owned by tor
-RUN chown -R tor /etc/tor
+# RUN chown -R tor /etc/tor
 
 # USER tor
 # default port for incoming Tor connections
