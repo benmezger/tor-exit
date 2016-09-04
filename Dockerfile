@@ -15,7 +15,7 @@ RUN rm -rf /var/cache/apk/*
 # make sure files are owned by tor
 RUN chown -R tor /etc/tor
 
-USER tor
+# USER tor
 # default port for incoming Tor connections
 EXPOSE 9001
 
