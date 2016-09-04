@@ -2,6 +2,7 @@ ExitRelay 1
 ORPort 9001
 Nickname unforgottenbit
 ContactInfo Ben Mezger, me@benmezger.nl PGP: 0xF2403AC05942EE08
+DirPort 80
 DirPortFrontPage /etc/tor/tor-exit-notice.html
 
 # log to stdout
