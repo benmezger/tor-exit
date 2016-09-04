@@ -6,7 +6,10 @@ services:
     command: "-f /etc/tor/torrc.exit"
     volumes:
       - "/etc/localtime:/etc/localtime"
+      - "/root/tor-exit/torrc.exit:/etc/tor/torrc.exit"
+      - "/root/tor-exit/tor-exit-notice.html:/etc/tor/tor-exit-notice.html"
     ports:
       - "9001:9001"
+      - "80:80"
     restart: always
     container_name: torexit
